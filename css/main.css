@@ -1,0 +1,647 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* CUSTOM STYLES */
+
+html {
+    font-family: arponasans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 5.063rem;
+}
+
+h2 {
+    font-size: 3.375rem;
+}
+
+h3 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+p {
+    /*top-bottom left-right*/
+    margin: 1em 0;
+}
+
+/*control flex for page*/
+.max-width {
+    max-width: 1280px;
+    padding: 0 10px;
+    margin: auto;
+}
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+    transition: transform .5s ease;
+}
+
+.container {
+    background-color: #5D3327;
+    position: relative;
+    width: 100%;
+}
+
+/*HEADER */
+
+
+/*Navigation*/
+
+.logo {
+    height: 100px;
+    background: url("../images/logo.png") no-repeat left;
+    width: 200px;
+    border-radius: 10px;
+    margin: 0px;
+
+}
+
+
+.navigation {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    z-index: 999;
+    overflow: hidden;
+
+
+}
+
+/* Navigation Animation */
+
+
+
+nav a:hover,
+nav a:focus {
+    text-decoration: underline;
+    transform: scale(1.4);
+}
+
+
+
+.navigation .max-width .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+
+}
+
+.navmenu .navmenulist {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.nmenu {
+    width: 25%;
+    justify-content: center;
+}
+
+
+
+.head1 h1 {
+    align-items: initial;
+}
+
+.navigation .navmenu li a {
+    color: #EDDFC7;
+    font-size: 22px;
+    margin: auto;
+    padding: auto;
+    transition: color 0.2s ease-in;
+}
+
+.navigation .navmenu li a:hover {
+    color: #D4AF37;
+}
+
+
+
+.social i {
+    color: #EDDFC7;
+    font-size: 24px;
+    margin-left: 20px;
+    transition: color 0.2s ease-in;
+
+}
+
+.social i:hover {
+    color: #D4AF37;
+}
+
+
+
+/* BANNER  */
+
+
+.banner {
+    display: flex;
+    overflow: hidden;
+    background: url("../images/main-banner.jpeg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    min-height: 500px;
+    justify-content: center;
+    color: #EDDFC7;
+    background-attachment: fixed;
+    margin: auto;
+}
+
+.masthead {
+    display: inline-block;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.head1 {
+    width: 100%;
+    justify-content: center;
+    font-size: 15vw;
+}
+
+/* button */
+.banner .masthead .head1 a {
+    display: inline-block;
+    position: relative;
+    background: rgba(13, 5, 5, 0.7);
+    color: #eddfc7;
+    font-size: 2.5vw;
+    padding: 3%;
+    border-radius: 10px;
+    justify-content: center;
+
+}
+
+.banner .masthead a:hover {
+    color: #000;
+    background: #eddfc7;
+    transition: ease-in 1s;
+
+}
+
+.banner .masthead h1 {
+    font-family: arpona, serif;
+    font-weight: 300;
+    font-style: extralight;
+}
+
+/* Pulse Animation for Call to Action*/
+.btnbanner {
+    animation: pulse 2s infinite;
+
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+
+    }
+
+    100% {
+        transform: scale (0.9);
+    }
+}
+
+/* Turn animation in active mode for Call to Action */
+
+@keyframes stretchleft {
+    0% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotateY(180deg);
+        border-radius: 10;
+    }
+
+    100% {
+        transform: rotateX(0);
+    }
+}
+
+.btnbanner:active {
+    animation: stretchleft 1s ease-in-out;
+}
+
+/* Store.html Style (secstore) */
+.max-width .navigation .secstore {
+    max-width: 1280px;
+    display: flex;
+    flex-wrap:wrap;
+    font-size: 2vw;
+    text-align: center;
+    width: 100%;
+}
+
+.secstoreh2 {
+    display: flex;
+    width: 100%;
+}
+.location .openhours {
+    display: flex;
+    width: 50%;
+}
+
+/* Footer */
+
+.sec_footer {
+    max-width: 1280px;
+    margin: auto;
+    color: #eddfc7;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: center
+}
+
+.rowf {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.columnf {
+    width: 25%;
+    justify-content: center;
+    font-size: 1vw;
+    text-align: center;
+
+
+
+}
+
+.columnf a {
+
+    font-size: 1.5vw;
+    margin: auto;
+    color: #eddfc7;
+    font-weight: 500;
+    display: block;
+    transition: all 0.3s ease;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.columnf a:hover {
+    color: #D4AF37;
+}
+
+.stock {
+
+    text-align: center;
+    font-size: 1vw;
+
+}
+
+.stock a {
+
+    color: #eddfc7;
+    font-size: 1vw;
+
+}
+
+
+
+
+
+
+
+/* MEDIA QUERY FOR RESPONSIVE DESIGN */
+
+/* Tablet Viewport */
+
+@media (max-width: 768px) {
+
+    .max-width {
+        max-width: 767px;
+        padding: 0 50px;
+        margin: auto;
+        width: auto;
+        font-size: 1vw;
+    }
+
+    /* Navigation menu (Responsive)) */
+
+    .logo {
+        height: 50px;
+        background: url("../images/logo.png") no-repeat left;
+        width: 100%;
+        border-radius: 10px;
+
+    }
+
+    .navmenu .navmenulist li a {
+        font-size: 2vw;
+        width: auto;
+    }
+
+    .social i {
+        font-size: 2vw;
+        width: auto;
+    }
+
+    /* Banner section (Responsive) */
+    .masthead .head1 .btnbanner h1 a {
+
+        font-size: 3vw;
+    }
+
+
+    h1 {
+        font-size: 8vw;
+
+    }
+
+    /* Footer Section (Responsive) */
+    .sec_footer {
+        max-width: 767px;
+
+    }
+
+
+
+    .columnf {
+        width: 33%;
+        justify-content: center;
+        font-size: 1.5vw;
+        text-align: center;
+
+
+    }
+
+
+    .stock {
+        max-width: 767px;
+        text-align: center;
+        font-size: 1.5vw;
+    }
+}
+
+/* Iphone Viewport */
+
+@media (max-width:375px) {
+
+    .max-width {
+        max-width: 374px;
+        padding: 0 50px;
+        margin: auto;
+        width: auto;
+        font-size: 2vw;
+    }
+
+    /* Navigation menu (Responsive)) */
+
+    .logo {
+            height: 25px;
+            background: url("../images/logo.png") no-repeat left;
+            width: 50px;
+            border-radius: 3px;
+            margin: 0px;
+        }
+    
+
+    
+
+    .navmenu .navmenulist li a {
+        font-size: 4vw;
+        width: auto;
+    }
+
+    .home {
+        display: none;
+    }
+    .store {
+        display: none;
+    }
+    .franchise {
+        display: none;
+    }
+
+    .social i {
+        font-size: 3vw;
+        width: auto;
+    }
+
+    /* Banner section (Responsive) */
+    .masthead .head1 .btnbanner h1 a {
+        font-size: 5vw;
+    }
+
+
+    h1 {
+        font-size: 9vw;
+
+    }
+
+    /* Footer Section (Responsive) */
+    .sec_footer {
+        max-width: 374px;
+
+    }
+
+
+
+    .columnf {
+        width: 75%;
+        justify-content: center;
+        font-size: 3vw;
+        text-align: center;
+
+
+    }
+    .columnf a {
+        width: 75%;
+        justify-content: center;
+        font-size: 3vw;
+        text-align: center;
+
+
+    }
+
+
+
+    .stock {
+        max-width: 374px;
+        text-align: center;
+        font-size: 3vw;
+    }
+    
+
+
+   
+    
+
+
+
+}
