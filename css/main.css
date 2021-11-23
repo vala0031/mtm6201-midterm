@@ -182,6 +182,7 @@ p {
     max-width: 1280px;
     padding: 0 10px;
     margin: auto;
+    
 }
 
 a,
@@ -207,20 +208,37 @@ a:visited {
     background: url("../images/logo.png") no-repeat left;
     width: 200px;
     border-radius: 10px;
-    margin: 0px;
+    
 
 }
 
 
 .navigation {
-    position: absolute;
+   
     display: inline-block;
+    position: absolute;
     width: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 0px;
     padding-right: 0px;
-    z-index: 999;
+    z-index: 9999;
+    overflow: hidden;
+
+
+}
+/* Navigation bar with solid background */
+
+.navigationbkg {
+   
+    display: inline-block;
+    
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    z-index: 9999;
     overflow: hidden;
 
 
@@ -239,6 +257,14 @@ nav a:focus {
 
 
 .navigation .max-width .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+
+}
+
+.navigationbkg .max-width .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -274,7 +300,18 @@ nav a:focus {
     transition: color 0.2s ease-in;
 }
 
+.navigationbkg .navmenu li a {
+    color: #EDDFC7;
+    font-size: 22px;
+    margin: auto;
+    padding: auto;
+    transition: color 0.2s ease-in;
+}
+
 .navigation .navmenu li a:hover {
+    color: #D4AF37;
+}
+.navigationbkg .navmenu li a:hover {
     color: #D4AF37;
 }
 
@@ -345,7 +382,7 @@ nav a:focus {
 
 .banner .masthead h1 {
     font-family: arpona, serif;
-    font-weight: 300;
+    font-weight: 200;
     font-style: extralight;
 }
 
@@ -392,23 +429,102 @@ nav a:focus {
 }
 
 /* Store.html Style (secstore) */
-.max-width .navigation .secstore {
+.secstore {
     max-width: 1280px;
     display: flex;
-    flex-wrap:wrap;
-    font-size: 2vw;
+    /* flex-wrap:wrap; */
     text-align: center;
-    width: 100%;
+    /* width: 100%; */
+    /* justify-content: center; */
+    
 }
+
+
 
 .secstoreh2 {
     display: flex;
     width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding: 10px;
+}
+
+.secstoreh2 h2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 3vw;
+    color: #eddfc7;
+    font-family: arpona, serif;
+    font-weight: 100;
+    font-style: normal; 
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding: 10px;
+}
+
+
+.location iframe {
+    border-radius: 10px;
+    
 }
 .location .openhours {
     display: flex;
-    width: 50%;
+    justify-content: center;
+    
 }
+
+.workdays {
+    background-color: rgba(237, 223, 199, 0.192);
+    color: #eddfc7;
+    padding: 25px;
+    border-radius: 10px;
+    font-family: arpona, serif;
+    font-weight: 100;
+    font-style: normal; 
+    line-height: 2.5em;
+    font-size: 1.5vw;
+    text-align: left;
+    
+    
+}
+.openhours h3 {
+    font-family: arpona, serif;
+    font-weight: 100;
+    font-style: normal; 
+    font-size: 2.5vw;
+    text-align: center;
+
+}
+
+.openhours {
+    justify-content: center;
+}
+
+
+
+
+/* formating Buttons */
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #222;
+    background-color: #222;
+    color: #eddfc7;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 15px;
+    font-size: 1.5vw;
+}
+
+
+.btn:hover,
+.btn:focus {
+    color: #D4AF37;
+    
+}
+
 
 /* Footer */
 
